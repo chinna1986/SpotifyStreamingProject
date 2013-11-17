@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Einloggen"
+        android:id="@+id/login"
+        android:background="@drawable/green_flat_button"
+        style="@style/FlatButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Get Playlist"
+        android:id="@+id/playlist"
+        android:background="@drawable/blue_flat_button"
+        style="@style/FlatButton"
+        android:layout_below="@+id/login"
+        android:layout_alignRight="@+id/login"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Abspielen"
+        android:id="@+id/play"
+        android:background="@drawable/orange_flat_button"
+        style="@style/FlatButton"
+        android:layout_below="@+id/playlist"
+        android:layout_alignRight="@+id/playlist" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/coverimage"
+        android:layout_alignTop="@+id/login"
+        android:layout_alignRight="@+id/listview2" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/stop"
+        android:background="@drawable/yellow_flat_button"
+        style="@style/FlatButton"
+        android:layout_below="@+id/play"
+        android:layout_alignRight="@+id/play" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview2"
+        android:layout_below="@+id/stop"
+        android:layout_alignLeft="@+id/stop"
+        android:choiceMode="singleChoice" />
+</RelativeLayout>
